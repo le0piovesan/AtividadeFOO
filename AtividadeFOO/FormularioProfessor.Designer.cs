@@ -50,6 +50,8 @@ namespace AtividadeFOO
             this.mtxtCPF = new System.Windows.Forms.MaskedTextBox();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.lbID = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbNomeFormulario
@@ -66,7 +68,7 @@ namespace AtividadeFOO
             // 
             this.lbNome.AutoSize = true;
             this.lbNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNome.Location = new System.Drawing.Point(13, 55);
+            this.lbNome.Location = new System.Drawing.Point(12, 75);
             this.lbNome.Name = "lbNome";
             this.lbNome.Size = new System.Drawing.Size(51, 20);
             this.lbNome.TabIndex = 1;
@@ -76,7 +78,7 @@ namespace AtividadeFOO
             // 
             this.lbEmail.AutoSize = true;
             this.lbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEmail.Location = new System.Drawing.Point(13, 84);
+            this.lbEmail.Location = new System.Drawing.Point(12, 104);
             this.lbEmail.Name = "lbEmail";
             this.lbEmail.Size = new System.Drawing.Size(48, 20);
             this.lbEmail.TabIndex = 2;
@@ -86,7 +88,7 @@ namespace AtividadeFOO
             // 
             this.lbCPF.AutoSize = true;
             this.lbCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCPF.Location = new System.Drawing.Point(13, 110);
+            this.lbCPF.Location = new System.Drawing.Point(12, 130);
             this.lbCPF.Name = "lbCPF";
             this.lbCPF.Size = new System.Drawing.Size(40, 20);
             this.lbCPF.TabIndex = 3;
@@ -96,7 +98,7 @@ namespace AtividadeFOO
             // 
             this.lbEndereco.AutoSize = true;
             this.lbEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEndereco.Location = new System.Drawing.Point(12, 136);
+            this.lbEndereco.Location = new System.Drawing.Point(11, 156);
             this.lbEndereco.Name = "lbEndereco";
             this.lbEndereco.Size = new System.Drawing.Size(78, 20);
             this.lbEndereco.TabIndex = 4;
@@ -104,21 +106,21 @@ namespace AtividadeFOO
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(70, 55);
+            this.txtNome.Location = new System.Drawing.Point(69, 75);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(321, 20);
             this.txtNome.TabIndex = 5;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(70, 84);
+            this.txtEmail.Location = new System.Drawing.Point(69, 104);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(321, 20);
             this.txtEmail.TabIndex = 6;
             // 
             // txtEndereco
             // 
-            this.txtEndereco.Location = new System.Drawing.Point(96, 136);
+            this.txtEndereco.Location = new System.Drawing.Point(95, 156);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(295, 20);
             this.txtEndereco.TabIndex = 8;
@@ -127,7 +129,7 @@ namespace AtividadeFOO
             // 
             this.lbNumero.AutoSize = true;
             this.lbNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNumero.Location = new System.Drawing.Point(398, 136);
+            this.lbNumero.Location = new System.Drawing.Point(397, 156);
             this.lbNumero.Name = "lbNumero";
             this.lbNumero.Size = new System.Drawing.Size(65, 20);
             this.lbNumero.TabIndex = 9;
@@ -135,14 +137,14 @@ namespace AtividadeFOO
             // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(469, 136);
+            this.txtNumero.Location = new System.Drawing.Point(468, 156);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(58, 20);
             this.txtNumero.TabIndex = 10;
             // 
             // txtComplemento
             // 
-            this.txtComplemento.Location = new System.Drawing.Point(647, 136);
+            this.txtComplemento.Location = new System.Drawing.Point(646, 156);
             this.txtComplemento.Name = "txtComplemento";
             this.txtComplemento.Size = new System.Drawing.Size(141, 20);
             this.txtComplemento.TabIndex = 11;
@@ -151,7 +153,7 @@ namespace AtividadeFOO
             // 
             this.lbComplemento.AutoSize = true;
             this.lbComplemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbComplemento.Location = new System.Drawing.Point(533, 136);
+            this.lbComplemento.Location = new System.Drawing.Point(532, 156);
             this.lbComplemento.Name = "lbComplemento";
             this.lbComplemento.Size = new System.Drawing.Size(108, 20);
             this.lbComplemento.TabIndex = 12;
@@ -161,7 +163,7 @@ namespace AtividadeFOO
             // 
             this.lbCidade.AutoSize = true;
             this.lbCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCidade.Location = new System.Drawing.Point(279, 162);
+            this.lbCidade.Location = new System.Drawing.Point(278, 182);
             this.lbCidade.Name = "lbCidade";
             this.lbCidade.Size = new System.Drawing.Size(59, 20);
             this.lbCidade.TabIndex = 13;
@@ -171,7 +173,7 @@ namespace AtividadeFOO
             // 
             this.lbEstado.AutoSize = true;
             this.lbEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEstado.Location = new System.Drawing.Point(523, 162);
+            this.lbEstado.Location = new System.Drawing.Point(522, 182);
             this.lbEstado.Name = "lbEstado";
             this.lbEstado.Size = new System.Drawing.Size(60, 20);
             this.lbEstado.TabIndex = 14;
@@ -181,7 +183,7 @@ namespace AtividadeFOO
             // 
             this.lbBairro.AutoSize = true;
             this.lbBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBairro.Location = new System.Drawing.Point(13, 162);
+            this.lbBairro.Location = new System.Drawing.Point(12, 182);
             this.lbBairro.Name = "lbBairro";
             this.lbBairro.Size = new System.Drawing.Size(51, 20);
             this.lbBairro.TabIndex = 15;
@@ -189,28 +191,28 @@ namespace AtividadeFOO
             // 
             // txtBairro
             // 
-            this.txtBairro.Location = new System.Drawing.Point(70, 162);
+            this.txtBairro.Location = new System.Drawing.Point(69, 182);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(203, 20);
             this.txtBairro.TabIndex = 16;
             // 
             // txtCidade
             // 
-            this.txtCidade.Location = new System.Drawing.Point(344, 162);
+            this.txtCidade.Location = new System.Drawing.Point(343, 182);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(173, 20);
             this.txtCidade.TabIndex = 17;
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(583, 162);
+            this.txtEstado.Location = new System.Drawing.Point(582, 182);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(205, 20);
             this.txtEstado.TabIndex = 18;
             // 
             // mtxtCPF
             // 
-            this.mtxtCPF.Location = new System.Drawing.Point(70, 110);
+            this.mtxtCPF.Location = new System.Drawing.Point(69, 130);
             this.mtxtCPF.Mask = "000.000.000-00";
             this.mtxtCPF.Name = "mtxtCPF";
             this.mtxtCPF.Size = new System.Drawing.Size(85, 20);
@@ -218,7 +220,7 @@ namespace AtividadeFOO
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(17, 194);
+            this.btnSalvar.Location = new System.Drawing.Point(16, 214);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(95, 36);
             this.btnSalvar.TabIndex = 20;
@@ -227,18 +229,37 @@ namespace AtividadeFOO
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(119, 194);
+            this.btnCancelar.Location = new System.Drawing.Point(118, 214);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(95, 36);
             this.btnCancelar.TabIndex = 21;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(69, 49);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(321, 20);
+            this.txtID.TabIndex = 46;
+            // 
+            // lbID
+            // 
+            this.lbID.AutoSize = true;
+            this.lbID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbID.Location = new System.Drawing.Point(12, 49);
+            this.lbID.Name = "lbID";
+            this.lbID.Size = new System.Drawing.Size(26, 20);
+            this.lbID.TabIndex = 45;
+            this.lbID.Text = "ID";
+            // 
             // FormularioProfessor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 242);
+            this.ClientSize = new System.Drawing.Size(800, 294);
+            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.lbID);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.mtxtCPF);
@@ -290,5 +311,7 @@ namespace AtividadeFOO
         private System.Windows.Forms.MaskedTextBox mtxtCPF;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.Label lbID;
     }
 }
