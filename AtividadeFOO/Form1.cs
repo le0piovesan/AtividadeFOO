@@ -36,5 +36,23 @@ namespace AtividadeFOO
             FormularioCurso fc = new FormularioCurso();
             fc.ShowDialog(this);
         }
+
+        private void alunoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormConsultarAluno fca = new FormConsultarAluno();
+            fca.ShowDialog(this);
+        }
+
+        private void professorToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormConsultarProfessor fcp = new FormConsultarProfessor();
+            fcp.ShowDialog(this);
+        }
+
+        private void cursoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormConsultarCurso fcc = new FormConsultarCurso();
+            fcc.ShowDialog(this);
+        }
     }
 }

@@ -226,6 +226,7 @@ namespace AtividadeFOO
             this.btnSalvar.TabIndex = 20;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnCancelar
             // 
@@ -235,6 +236,7 @@ namespace AtividadeFOO
             this.btnCancelar.TabIndex = 21;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // txtID
             // 
@@ -257,7 +259,7 @@ namespace AtividadeFOO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 294);
+            this.ClientSize = new System.Drawing.Size(800, 270);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.lbID);
             this.Controls.Add(this.btnCancelar);

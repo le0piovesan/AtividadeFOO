@@ -55,6 +55,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormConsultarAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultarAluno.Designer.cs">
+      <DependentUpon>FormConsultarAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultarCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultarCurso.Designer.cs">
+      <DependentUpon>FormConsultarCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultarProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultarProfessor.Designer.cs">
+      <DependentUpon>FormConsultarProfessor.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormularioAluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +95,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultarAluno.resx">
+      <DependentUpon>FormConsultarAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultarProfessor.resx">
+      <DependentUpon>FormConsultarProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioAluno.resx">
+      <DependentUpon>FormularioAluno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioCurso.resx">
       <DependentUpon>FormularioCurso.cs</DependentUpon>

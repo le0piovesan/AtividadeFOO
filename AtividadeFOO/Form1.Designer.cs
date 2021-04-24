@@ -99,18 +99,21 @@ namespace AtividadeFOO
             this.alunoToolStripMenuItem1.Name = "alunoToolStripMenuItem1";
             this.alunoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.alunoToolStripMenuItem1.Text = "Aluno";
+            this.alunoToolStripMenuItem1.Click += new System.EventHandler(this.alunoToolStripMenuItem1_Click);
             // 
             // professorToolStripMenuItem1
             // 
             this.professorToolStripMenuItem1.Name = "professorToolStripMenuItem1";
             this.professorToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.professorToolStripMenuItem1.Text = "Professor";
+            this.professorToolStripMenuItem1.Click += new System.EventHandler(this.professorToolStripMenuItem1_Click);
             // 
             // cursoToolStripMenuItem1
             // 
             this.cursoToolStripMenuItem1.Name = "cursoToolStripMenuItem1";
             this.cursoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.cursoToolStripMenuItem1.Text = "Curso";
+            this.cursoToolStripMenuItem1.Click += new System.EventHandler(this.cursoToolStripMenuItem1_Click);
             // 
             // lbNomeFormulario
             // 
