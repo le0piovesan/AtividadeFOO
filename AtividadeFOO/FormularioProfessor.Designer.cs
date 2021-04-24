@@ -48,6 +48,8 @@ namespace AtividadeFOO
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.mtxtCPF = new System.Windows.Forms.MaskedTextBox();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbNomeFormulario
@@ -214,11 +216,31 @@ namespace AtividadeFOO
             this.mtxtCPF.Size = new System.Drawing.Size(85, 20);
             this.mtxtCPF.TabIndex = 19;
             // 
+            // btnSalvar
+            // 
+            this.btnSalvar.Location = new System.Drawing.Point(17, 194);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(95, 36);
+            this.btnSalvar.TabIndex = 20;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(119, 194);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(95, 36);
+            this.btnCancelar.TabIndex = 21;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
             // FormularioProfessor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 217);
+            this.ClientSize = new System.Drawing.Size(800, 242);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.mtxtCPF);
             this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.txtCidade);
@@ -266,5 +288,7 @@ namespace AtividadeFOO
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.MaskedTextBox mtxtCPF;
+        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }
