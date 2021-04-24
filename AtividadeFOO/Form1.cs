@@ -15,6 +15,26 @@ namespace AtividadeFOO
         public Form1()
         {
             InitializeComponent();
+
+            lbNomeFormulario.Text = "Curso de TADS.";
+        }
+
+        public void alunoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormularioAluno fa = new FormularioAluno();
+            fa.ShowDialog(this);
+        }
+
+        public void professorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormularioProfessor fp = new FormularioProfessor();
+            fp.ShowDialog(this);
+        }
+
+        public void cursoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormularioCurso fc = new FormularioCurso();
+            fc.ShowDialog(this);
         }
     }
 }

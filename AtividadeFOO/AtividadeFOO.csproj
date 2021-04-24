@@ -46,14 +46,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entidades\Aluno.cs" />
+    <Compile Include="Entidades\Curso.cs" />
+    <Compile Include="Entidades\Professor.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormularioAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioAluno.Designer.cs">
+      <DependentUpon>FormularioAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioCurso.Designer.cs">
+      <DependentUpon>FormularioCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioProfessor.Designer.cs">
+      <DependentUpon>FormularioProfessor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioCurso.resx">
+      <DependentUpon>FormularioCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioProfessor.resx">
+      <DependentUpon>FormularioProfessor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -76,8 +106,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entidades\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
