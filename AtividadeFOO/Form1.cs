@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoFaculdade.Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace AtividadeFOO
 {
     public partial class Form1 : Form
     {
+        private List<object> Professores;
+
         public Form1()
         {
             InitializeComponent();
@@ -45,6 +48,7 @@ namespace AtividadeFOO
 
         private void professorToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            
             FormConsultarProfessor fcp = new FormConsultarProfessor();
             fcp.ShowDialog(this);
         }

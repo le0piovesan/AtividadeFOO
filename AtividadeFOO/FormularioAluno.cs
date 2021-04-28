@@ -18,34 +18,22 @@ namespace AtividadeFOO
             InitializeComponent();
 
             lbNomeFormulario.Text = "Cadastro de Aluno";
-
-            Aluno a = new Aluno();
-
-            txtID.Text = a.IDAluno.ToString();
-            txtNome.Text = a.Nome;
-            txtEmail.Text = a.Email;
-            mtxtCPF.Text = a.CPF;
-            txtEndereco.Text = a.Endereco;
-            txtNumero.Text = a.Numero.ToString();
-            txtComplemento.Text = a.Complemento;
-            txtBairro.Text = a.Bairro;
-            txtCidade.Text = a.Cidade;
-            txtEstado.Text = a.Estado;
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            Aluno a = new Aluno();
-            a.IDAluno = Convert.ToInt32(txtID.Text);
-            a.Nome = txtNome.Text;
-            a.Email = txtEmail.Text;
-            a.CPF = mtxtCPF.Text;
-            a.Endereco = txtEndereco.Text;
-            a.Numero = Convert.ToInt32(txtNumero.Text);
-            a.Complemento = txtComplemento.Text;
-            a.Bairro = txtBairro.Text;
-            a.Cidade = txtCidade.Text;
-            a.Estado = txtEstado.Text;
+            Aluno a = new Aluno(Convert.ToInt32(txtID.Text),
+                                        txtNome.Text,
+                                        txtEmail.Text,
+                                        mtxtCPF.Text,
+                                        txtEndereco.Text,
+                                        Convert.ToInt32(txtNumero.Text),
+                                        txtComplemento.Text,
+                                        txtBairro.Text,
+                                        txtCidade.Text,
+                                        txtEstado.Text);
+
+            a.Salvar(a);
 
             if (!ValidarObjeto(a))
                 return;

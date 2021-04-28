@@ -19,34 +19,23 @@ namespace AtividadeFOO
 
             lbNomeFormulario.Text = "Cadastro de Professor";
 
-
-            Professor p = new Professor();
-
-            txtID.Text = p.IDProfessor.ToString();
-            txtNome.Text = p.Nome;
-            txtEmail.Text = p.Email;
-            mtxtCPF.Text = p.CPF;
-            txtEndereco.Text = p.Endereco;
-            txtNumero.Text = p.Numero.ToString();
-            txtComplemento.Text = p.Complemento;
-            txtBairro.Text = p.Bairro;
-            txtCidade.Text = p.Cidade;
-            txtEstado.Text = p.Estado;
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            Professor p = new Professor();
-            p.IDProfessor = Convert.ToInt32(txtID.Text);
-            p.Nome = txtNome.Text;
-            p.Email = txtEmail.Text;
-            p.CPF = mtxtCPF.Text;
-            p.Endereco = txtEndereco.Text;
-            p.Numero = Convert.ToInt32(txtNumero.Text);
-            p.Complemento = txtComplemento.Text;
-            p.Bairro = txtBairro.Text;
-            p.Cidade = txtCidade.Text;
-            p.Estado = txtEstado.Text;
+
+            Professor p = new Professor(Convert.ToInt32(txtID.Text),
+                                        txtNome.Text, 
+                                        txtEmail.Text, 
+                                        mtxtCPF.Text, 
+                                        txtEndereco.Text, 
+                                        Convert.ToInt32(txtNumero.Text), 
+                                        txtComplemento.Text, 
+                                        txtBairro.Text, 
+                                        txtCidade.Text, 
+                                        txtEstado.Text);
+
+            p.Salvar(p);
 
             if (!ValidarObjeto(p))
                 return;

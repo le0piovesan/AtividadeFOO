@@ -1,7 +1,6 @@
 C:\Users\Franck Lopes\Documents\Facul\POO\ProjetoFacul\AtividadeFOO\AtividadeFOO\bin\Debug\AtividadeFOO.exe.config
 C:\Users\Franck Lopes\Documents\Facul\POO\ProjetoFacul\AtividadeFOO\AtividadeFOO\bin\Debug\AtividadeFOO.exe
 C:\Users\Franck Lopes\Documents\Facul\POO\ProjetoFacul\AtividadeFOO\AtividadeFOO\bin\Debug\AtividadeFOO.pdb
-C:\Users\Franck Lopes\Documents\Facul\POO\ProjetoFacul\AtividadeFOO\AtividadeFOO\obj\Debug\AtividadeFOO.csprojAssemblyReference.cache
 C:\Users\Franck Lopes\Documents\Facul\POO\ProjetoFacul\AtividadeFOO\AtividadeFOO\obj\Debug\AtividadeFOO.Form1.resources
 C:\Users\Franck Lopes\Documents\Facul\POO\ProjetoFacul\AtividadeFOO\AtividadeFOO\obj\Debug\AtividadeFOO.Properties.Resources.resources
 C:\Users\Franck Lopes\Documents\Facul\POO\ProjetoFacul\AtividadeFOO\AtividadeFOO\obj\Debug\AtividadeFOO.csproj.GenerateResource.cache
@@ -13,3 +12,4 @@ C:\Users\Franck Lopes\Documents\Facul\POO\ProjetoFacul\AtividadeFOO\AtividadeFOO
 C:\Users\Franck Lopes\Documents\Facul\POO\ProjetoFacul\AtividadeFOO\AtividadeFOO\obj\Debug\AtividadeFOO.FormularioAluno.resources
 C:\Users\Franck Lopes\Documents\Facul\POO\ProjetoFacul\AtividadeFOO\AtividadeFOO\obj\Debug\AtividadeFOO.FormConsultarAluno.resources
 C:\Users\Franck Lopes\Documents\Facul\POO\ProjetoFacul\AtividadeFOO\AtividadeFOO\obj\Debug\AtividadeFOO.FormConsultarProfessor.resources
+C:\Users\Franck Lopes\Documents\Facul\POO\ProjetoFacul\AtividadeFOO\AtividadeFOO\obj\Debug\AtividadeFOO.csprojAssemblyReference.cache
