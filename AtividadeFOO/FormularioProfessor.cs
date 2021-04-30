@@ -21,6 +21,20 @@ namespace AtividadeFOO
 
         }
 
+        public void PopulaCampos(Professor prof)
+        {
+            txtID.Text = prof.IDProfessor.ToString();
+            txtNome.Text = prof.Nome;
+            txtEmail.Text = prof.Email;
+            mtxtCPF.Text = prof.CPF;
+            txtEndereco.Text = prof.Endereco;
+            txtNumero.Text = prof.Numero.ToString();
+            txtComplemento.Text = prof.Complemento;
+            txtBairro.Text = prof.Bairro;
+            txtCidade.Text = prof.Cidade;
+            txtEstado.Text = prof.Estado;
+        }
+
         private void btnSalvar_Click(object sender, EventArgs e)
         {
 
@@ -58,6 +72,9 @@ namespace AtividadeFOO
 
                 return true;
             }
+
+            MessageBox.Show(this, "Professor salvo.", "Aviso.");
+            this.Hide();
 
         }
 

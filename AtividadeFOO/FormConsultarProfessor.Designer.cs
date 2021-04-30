@@ -30,7 +30,7 @@ namespace AtividadeFOO
         private void InitializeComponent()
         {
             this.cbNome = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbConsultaProfessor = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,6 +50,9 @@ namespace AtividadeFOO
             this.lbComplemento = new System.Windows.Forms.Label();
             this.lbEmail = new System.Windows.Forms.Label();
             this.lbID = new System.Windows.Forms.Label();
+            this.btnRemover = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.bntCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cbNome
@@ -61,15 +64,15 @@ namespace AtividadeFOO
             this.cbNome.TabIndex = 4;
             this.cbNome.SelectedIndexChanged += new System.EventHandler(this.cbNome_SelectedIndexChanged);
             // 
-            // label1
+            // lbConsultaProfessor
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 29);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Nome Formulario";
+            this.lbConsultaProfessor.AutoSize = true;
+            this.lbConsultaProfessor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbConsultaProfessor.Location = new System.Drawing.Point(12, 9);
+            this.lbConsultaProfessor.Name = "lbConsultaProfessor";
+            this.lbConsultaProfessor.Size = new System.Drawing.Size(202, 29);
+            this.lbConsultaProfessor.TabIndex = 6;
+            this.lbConsultaProfessor.Text = "Nome Formulario";
             // 
             // label2
             // 
@@ -135,7 +138,7 @@ namespace AtividadeFOO
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(507, 241);
+            this.label8.Location = new System.Drawing.Point(572, 241);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(112, 20);
             this.label8.TabIndex = 13;
@@ -155,7 +158,7 @@ namespace AtividadeFOO
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(278, 284);
+            this.label10.Location = new System.Drawing.Point(336, 284);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(63, 20);
             this.label10.TabIndex = 15;
@@ -165,7 +168,7 @@ namespace AtividadeFOO
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(507, 284);
+            this.label11.Location = new System.Drawing.Point(572, 284);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(64, 20);
             this.label11.TabIndex = 16;
@@ -205,7 +208,7 @@ namespace AtividadeFOO
             // 
             this.lbCidade.AutoSize = true;
             this.lbCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCidade.Location = new System.Drawing.Point(347, 284);
+            this.lbCidade.Location = new System.Drawing.Point(405, 284);
             this.lbCidade.Name = "lbCidade";
             this.lbCidade.Size = new System.Drawing.Size(71, 20);
             this.lbCidade.TabIndex = 22;
@@ -215,7 +218,7 @@ namespace AtividadeFOO
             // 
             this.lbEstado.AutoSize = true;
             this.lbEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEstado.Location = new System.Drawing.Point(577, 284);
+            this.lbEstado.Location = new System.Drawing.Point(642, 284);
             this.lbEstado.Name = "lbEstado";
             this.lbEstado.Size = new System.Drawing.Size(72, 20);
             this.lbEstado.TabIndex = 23;
@@ -235,7 +238,7 @@ namespace AtividadeFOO
             // 
             this.lbComplemento.AutoSize = true;
             this.lbComplemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbComplemento.Location = new System.Drawing.Point(625, 241);
+            this.lbComplemento.Location = new System.Drawing.Point(690, 241);
             this.lbComplemento.Name = "lbComplemento";
             this.lbComplemento.Size = new System.Drawing.Size(120, 20);
             this.lbComplemento.TabIndex = 25;
@@ -261,9 +264,45 @@ namespace AtividadeFOO
             this.lbID.TabIndex = 27;
             this.lbID.Text = "lbID";
             // 
+            // btnRemover
+            // 
+            this.btnRemover.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemover.Location = new System.Drawing.Point(502, 43);
+            this.btnRemover.Name = "btnRemover";
+            this.btnRemover.Size = new System.Drawing.Size(86, 33);
+            this.btnRemover.TabIndex = 49;
+            this.btnRemover.Text = "Remover";
+            this.btnRemover.UseVisualStyleBackColor = true;
+            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Location = new System.Drawing.Point(401, 43);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(75, 33);
+            this.btnEditar.TabIndex = 48;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // bntCancelar
+            // 
+            this.bntCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntCancelar.Location = new System.Drawing.Point(613, 43);
+            this.bntCancelar.Name = "bntCancelar";
+            this.bntCancelar.Size = new System.Drawing.Size(86, 33);
+            this.bntCancelar.TabIndex = 50;
+            this.bntCancelar.Text = "Cancelar";
+            this.bntCancelar.UseVisualStyleBackColor = true;
+            this.bntCancelar.Click += new System.EventHandler(this.bntCancelar_Click);
+            // 
             // FormConsultarProfessor
             // 
             this.ClientSize = new System.Drawing.Size(872, 320);
+            this.Controls.Add(this.bntCancelar);
+            this.Controls.Add(this.btnRemover);
+            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.lbID);
             this.Controls.Add(this.lbEmail);
             this.Controls.Add(this.lbComplemento);
@@ -283,10 +322,10 @@ namespace AtividadeFOO
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbConsultaProfessor);
             this.Controls.Add(this.cbNome);
             this.Name = "FormConsultarProfessor";
-            this.Text = "v";
+            this.Text = "Consulta Professor";
             this.Load += new System.EventHandler(this.FormConsultarProfessor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -300,7 +339,7 @@ namespace AtividadeFOO
         private System.Windows.Forms.Label lbNomeFormulario;
         private System.Windows.Forms.ComboBox cbProfessor;
         private System.Windows.Forms.ComboBox cbNome;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbConsultaProfessor;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -320,5 +359,8 @@ namespace AtividadeFOO
         private System.Windows.Forms.Label lbComplemento;
         private System.Windows.Forms.Label lbEmail;
         private System.Windows.Forms.Label lbID;
+        private System.Windows.Forms.Button btnRemover;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button bntCancelar;
     }
 }

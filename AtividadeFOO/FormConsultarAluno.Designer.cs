@@ -30,7 +30,7 @@ namespace AtividadeFOO
         private void InitializeComponent()
         {
             this.cbNome = new System.Windows.Forms.ComboBox();
-            this.lbNomeFormulario = new System.Windows.Forms.Label();
+            this.lbConsultaAluno = new System.Windows.Forms.Label();
             this.lbNome = new System.Windows.Forms.Label();
             this.lbID = new System.Windows.Forms.Label();
             this.lbEmail = new System.Windows.Forms.Label();
@@ -50,6 +50,9 @@ namespace AtividadeFOO
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnRemover = new System.Windows.Forms.Button();
+            this.bntCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cbNome
@@ -61,15 +64,15 @@ namespace AtividadeFOO
             this.cbNome.TabIndex = 0;
             this.cbNome.SelectedIndexChanged += new System.EventHandler(this.cbNome_SelectedIndexChanged);
             // 
-            // lbNomeFormulario
+            // lbConsultaAluno
             // 
-            this.lbNomeFormulario.AutoSize = true;
-            this.lbNomeFormulario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNomeFormulario.Location = new System.Drawing.Point(12, 9);
-            this.lbNomeFormulario.Name = "lbNomeFormulario";
-            this.lbNomeFormulario.Size = new System.Drawing.Size(202, 29);
-            this.lbNomeFormulario.TabIndex = 1;
-            this.lbNomeFormulario.Text = "Nome Formulario";
+            this.lbConsultaAluno.AutoSize = true;
+            this.lbConsultaAluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbConsultaAluno.Location = new System.Drawing.Point(12, 9);
+            this.lbConsultaAluno.Name = "lbConsultaAluno";
+            this.lbConsultaAluno.Size = new System.Drawing.Size(202, 29);
+            this.lbConsultaAluno.TabIndex = 1;
+            this.lbConsultaAluno.Text = "Nome Formulario";
             // 
             // lbNome
             // 
@@ -105,7 +108,7 @@ namespace AtividadeFOO
             // 
             this.lbComplemento.AutoSize = true;
             this.lbComplemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbComplemento.Location = new System.Drawing.Point(624, 239);
+            this.lbComplemento.Location = new System.Drawing.Point(694, 239);
             this.lbComplemento.Name = "lbComplemento";
             this.lbComplemento.Size = new System.Drawing.Size(120, 20);
             this.lbComplemento.TabIndex = 43;
@@ -125,7 +128,7 @@ namespace AtividadeFOO
             // 
             this.lbEstado.AutoSize = true;
             this.lbEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEstado.Location = new System.Drawing.Point(576, 282);
+            this.lbEstado.Location = new System.Drawing.Point(646, 282);
             this.lbEstado.Name = "lbEstado";
             this.lbEstado.Size = new System.Drawing.Size(72, 20);
             this.lbEstado.TabIndex = 41;
@@ -135,7 +138,7 @@ namespace AtividadeFOO
             // 
             this.lbCidade.AutoSize = true;
             this.lbCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCidade.Location = new System.Drawing.Point(346, 282);
+            this.lbCidade.Location = new System.Drawing.Point(404, 282);
             this.lbCidade.Name = "lbCidade";
             this.lbCidade.Size = new System.Drawing.Size(71, 20);
             this.lbCidade.TabIndex = 40;
@@ -175,7 +178,7 @@ namespace AtividadeFOO
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(506, 282);
+            this.label11.Location = new System.Drawing.Point(576, 282);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(64, 20);
             this.label11.TabIndex = 36;
@@ -185,7 +188,7 @@ namespace AtividadeFOO
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(277, 282);
+            this.label10.Location = new System.Drawing.Point(335, 282);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(63, 20);
             this.label10.TabIndex = 35;
@@ -205,7 +208,7 @@ namespace AtividadeFOO
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(506, 239);
+            this.label8.Location = new System.Drawing.Point(576, 239);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(112, 20);
             this.label8.TabIndex = 33;
@@ -261,11 +264,47 @@ namespace AtividadeFOO
             this.label3.TabIndex = 28;
             this.label3.Text = "ID:";
             // 
+            // btnEditar
+            // 
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Location = new System.Drawing.Point(408, 48);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(75, 33);
+            this.btnEditar.TabIndex = 46;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnRemover
+            // 
+            this.btnRemover.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemover.Location = new System.Drawing.Point(509, 48);
+            this.btnRemover.Name = "btnRemover";
+            this.btnRemover.Size = new System.Drawing.Size(86, 33);
+            this.btnRemover.TabIndex = 47;
+            this.btnRemover.Text = "Remover";
+            this.btnRemover.UseVisualStyleBackColor = true;
+            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
+            // 
+            // bntCancelar
+            // 
+            this.bntCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntCancelar.Location = new System.Drawing.Point(617, 48);
+            this.bntCancelar.Name = "bntCancelar";
+            this.bntCancelar.Size = new System.Drawing.Size(86, 33);
+            this.bntCancelar.TabIndex = 48;
+            this.bntCancelar.Text = "Cancelar";
+            this.bntCancelar.UseVisualStyleBackColor = true;
+            this.bntCancelar.Click += new System.EventHandler(this.bntCancelar_Click);
+            // 
             // FormConsultarAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 325);
+            this.ClientSize = new System.Drawing.Size(872, 320);
+            this.Controls.Add(this.bntCancelar);
+            this.Controls.Add(this.btnRemover);
+            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.lbID);
             this.Controls.Add(this.lbEmail);
             this.Controls.Add(this.lbComplemento);
@@ -285,10 +324,11 @@ namespace AtividadeFOO
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lbNome);
-            this.Controls.Add(this.lbNomeFormulario);
+            this.Controls.Add(this.lbConsultaAluno);
             this.Controls.Add(this.cbNome);
             this.Name = "FormConsultarAluno";
-            this.Text = "FormConsultarAluno";
+            this.Text = "Consultar Aluno";
+            this.Load += new System.EventHandler(this.FormConsultarAluno_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,7 +337,7 @@ namespace AtividadeFOO
         #endregion
 
         private System.Windows.Forms.ComboBox cbNome;
-        private System.Windows.Forms.Label lbNomeFormulario;
+        private System.Windows.Forms.Label lbConsultaAluno;
         private System.Windows.Forms.Label lbNome;
         private System.Windows.Forms.Label lbID;
         private System.Windows.Forms.Label lbEmail;
@@ -317,5 +357,8 @@ namespace AtividadeFOO
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnRemover;
+        private System.Windows.Forms.Button bntCancelar;
     }
 }

@@ -20,18 +20,32 @@ namespace AtividadeFOO
             lbNomeFormulario.Text = "Cadastro de Aluno";
         }
 
+        public void PopulaCampos(Aluno al)
+        {
+            txtID.Text = al.IDAluno.ToString();
+            txtNome.Text = al.Nome;
+            txtEmail.Text = al.Email;
+            mtxtCPF.Text = al.CPF;
+            txtEndereco.Text = al.Endereco;
+            txtNumero.Text = al.Numero.ToString();
+            txtComplemento.Text = al.Complemento;
+            txtBairro.Text = al.Bairro;
+            txtCidade.Text = al.Cidade;
+            txtEstado.Text = al.Estado;
+        }
+
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             Aluno a = new Aluno(Convert.ToInt32(txtID.Text),
-                                        txtNome.Text,
-                                        txtEmail.Text,
-                                        mtxtCPF.Text,
-                                        txtEndereco.Text,
-                                        Convert.ToInt32(txtNumero.Text),
-                                        txtComplemento.Text,
-                                        txtBairro.Text,
-                                        txtCidade.Text,
-                                        txtEstado.Text);
+                                txtNome.Text,
+                                txtEmail.Text,
+                                mtxtCPF.Text,
+                                txtEndereco.Text,
+                                Convert.ToInt32(txtNumero.Text),
+                                txtComplemento.Text,
+                                txtBairro.Text,
+                                txtCidade.Text,
+                                txtEstado.Text);
 
             a.Salvar(a);
 
@@ -57,6 +71,9 @@ namespace AtividadeFOO
                 return true;
             }
 
+            MessageBox.Show(this, "Aluno salvo.", "Aviso.");
+            this.Hide();
+
         }
 
         private void LimparTela()
@@ -76,6 +93,7 @@ namespace AtividadeFOO
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Hide();
+           
         }
     }
 }

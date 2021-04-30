@@ -213,7 +213,7 @@ namespace AtividadeFOO
             // mtxtCPF
             // 
             this.mtxtCPF.Location = new System.Drawing.Point(69, 130);
-            this.mtxtCPF.Mask = "000.000.000-00";
+            this.mtxtCPF.Mask = "000,000,000-00";
             this.mtxtCPF.Name = "mtxtCPF";
             this.mtxtCPF.Size = new System.Drawing.Size(85, 20);
             this.mtxtCPF.TabIndex = 19;

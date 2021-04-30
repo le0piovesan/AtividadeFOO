@@ -10,6 +10,5 @@ C:\Users\Franck Lopes\Documents\Facul\POO\ProjetoFacul\AtividadeFOO\AtividadeFOO
 C:\Users\Franck Lopes\Documents\Facul\POO\ProjetoFacul\AtividadeFOO\AtividadeFOO\obj\Debug\AtividadeFOO.FormularioCurso.resources
 C:\Users\Franck Lopes\Documents\Facul\POO\ProjetoFacul\AtividadeFOO\AtividadeFOO\obj\Debug\AtividadeFOO.FormularioProfessor.resources
 C:\Users\Franck Lopes\Documents\Facul\POO\ProjetoFacul\AtividadeFOO\AtividadeFOO\obj\Debug\AtividadeFOO.FormularioAluno.resources
-C:\Users\Franck Lopes\Documents\Facul\POO\ProjetoFacul\AtividadeFOO\AtividadeFOO\obj\Debug\AtividadeFOO.FormConsultarAluno.resources
 C:\Users\Franck Lopes\Documents\Facul\POO\ProjetoFacul\AtividadeFOO\AtividadeFOO\obj\Debug\AtividadeFOO.FormConsultarProfessor.resources
-C:\Users\Franck Lopes\Documents\Facul\POO\ProjetoFacul\AtividadeFOO\AtividadeFOO\obj\Debug\AtividadeFOO.csprojAssemblyReference.cache
+C:\Users\Franck Lopes\Documents\Facul\POO\ProjetoFacul\AtividadeFOO\AtividadeFOO\obj\Debug\AtividadeFOO.FormConsultarAluno.resources
