@@ -34,6 +34,19 @@ namespace ProjetoFaculdade.Entidades
             }
         }
 
+        public int ProximoID()
+        {
+            if(Alunos.Count <= 0) {
+                return 1;
+            }
+            else {
+                Int32 length = Alunos.Count;
+                Aluno aluno = Alunos[length - 1];
+                return aluno.IDAluno + 1;
+            }
+            
+        }
+
 
         public void Adiciona(Aluno DadosAluno)
         {

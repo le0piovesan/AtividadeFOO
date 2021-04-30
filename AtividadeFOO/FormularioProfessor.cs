@@ -19,11 +19,15 @@ namespace AtividadeFOO
 
             lbNomeFormulario.Text = "Cadastro de Professor";
 
+            Professor prof = new Professor();
+
+            txtID.Text = prof.ProximoID().ToString();
+
         }
 
         public void PopulaCampos(Professor prof)
         {
-            txtID.Text = prof.IDProfessor.ToString();
+            txtID.Text = prof.ProximoID().ToString();
             txtNome.Text = prof.Nome;
             txtEmail.Text = prof.Email;
             mtxtCPF.Text = prof.CPF;

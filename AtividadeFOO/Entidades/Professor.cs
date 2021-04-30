@@ -36,6 +36,21 @@ namespace ProjetoFaculdade.Entidades
             }
         }
 
+        public int ProximoID()
+        {
+            if (Professores.Count <= 0)
+            {
+                return 1;
+            }
+            else
+            {
+                Int32 length = Professores.Count;
+                Professor professor = Professores[length - 1];
+                return professor.IDProfessor + 1;
+            }
+
+        }
+
         public void Adiciona(Professor DadosProfessor)
         {
             Professores.Add(new Professor(DadosProfessor.IDProfessor,

@@ -13,16 +13,23 @@ namespace AtividadeFOO
 {
     public partial class FormularioAluno : Form
     {
+
         public FormularioAluno()
         {
             InitializeComponent();
 
             lbNomeFormulario.Text = "Cadastro de Aluno";
+
+            Aluno a = new Aluno();
+
+            txtID.Text = a.ProximoID().ToString();
         }
+
+   
 
         public void PopulaCampos(Aluno al)
         {
-            txtID.Text = al.IDAluno.ToString();
+            txtID.Text = al.ProximoID().ToString();
             txtNome.Text = al.Nome;
             txtEmail.Text = al.Email;
             mtxtCPF.Text = al.CPF;
@@ -36,6 +43,7 @@ namespace AtividadeFOO
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+
             Aluno a = new Aluno(Convert.ToInt32(txtID.Text),
                                 txtNome.Text,
                                 txtEmail.Text,
@@ -48,6 +56,9 @@ namespace AtividadeFOO
                                 txtEstado.Text);
 
             a.Salvar(a);
+
+
+            
 
             if (!ValidarObjeto(a))
                 return;

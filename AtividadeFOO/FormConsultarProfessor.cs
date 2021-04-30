@@ -20,15 +20,15 @@ namespace AtividadeFOO
             InicializaCombo();
 
             lbConsultaProfessor.Text = "Consulta de Professores";
-            lbID.Text = "";
-            lbEmail.Text = "";
-            lbCPF.Text = "";
-            lbEndereco.Text = "";
-            lbNumero.Text = "";
-            lbComplemento.Text = "";
-            lbBairro.Text = "";
-            lbCidade.Text = "";
-            lbEstado.Text = "";
+            txtID.Text = "ID: " + "";
+            txtEmail.Text = "Email: " + "";
+            txtCPF.Text = "CPF: " + "";
+            txtEndereco.Text = "Endereço: " + "";
+            txtNumero.Text = "Número: " + "";
+            txtComplemento.Text = "Complemento: " + "";
+            txtBairro.Text = "Bairro: " + "";
+            txtCidade.Text = "Cidade: " + "";
+            txtEstado.Text = "Estado: " + "";
         }
 
         public void InicializaCombo()
@@ -67,15 +67,15 @@ namespace AtividadeFOO
             {
                 if (p.IDProfessor == professor.IDProfessor)
                 {
-                    lbID.Text = p.IDProfessor.ToString();
-                    lbEmail.Text = p.Email;
-                    lbCPF.Text = p.CPF;
-                    lbEndereco.Text = p.Endereco;
-                    lbNumero.Text = p.Numero.ToString();
-                    lbComplemento.Text = p.Complemento;
-                    lbBairro.Text = p.Bairro;
-                    lbCidade.Text = p.Cidade;
-                    lbEstado.Text = p.Estado;
+                    txtID.Text = "ID: " + prof.IDProfessor.ToString();
+                    txtEmail.Text = $"Email: " + prof.Email;
+                    txtCPF.Text = $"CPF: " + prof.CPF;
+                    txtEndereco.Text = $"Endereço: " + prof.Endereco;
+                    txtNumero.Text = $"Número: " + prof.Numero.ToString();
+                    txtComplemento.Text = $"Complemento: " + prof.Complemento;
+                    txtBairro.Text = $"Bairro: " + prof.Bairro;
+                    txtCidade.Text = $"Cidade: " + prof.Cidade;
+                    txtEstado.Text = $"Estado: " + prof.Estado;
                 }
             }
 
@@ -102,15 +102,15 @@ namespace AtividadeFOO
             cbNome.Refresh();
 
             cbNome.Text = "";
-            lbID.Text = "";
-            lbEmail.Text = "";
-            lbCPF.Text = "";
-            lbEndereco.Text = "";
-            lbNumero.Text = "";
-            lbComplemento.Text = "";
-            lbBairro.Text = "";
-            lbCidade.Text = "";
-            lbEstado.Text = "";
+            txtID.Text = "ID: " + "";
+            txtEmail.Text = "Email: " + "";
+            txtCPF.Text = "CPF: " + "";
+            txtEndereco.Text = "Endereço: " + "";
+            txtNumero.Text = "Número: " + "";
+            txtComplemento.Text = "Complemento: " + "";
+            txtBairro.Text = "Bairro: " + "";
+            txtCidade.Text = "Cidade: " + "";
+            txtEstado.Text = "Estado: " + "";
         }
 
         private void btnRemover_Click(object sender, EventArgs e)
@@ -134,15 +134,15 @@ namespace AtividadeFOO
 
 
             cbNome.Text = "";
-            lbID.Text = "";
-            lbEmail.Text = "";
-            lbCPF.Text = "";
-            lbEndereco.Text = "";
-            lbNumero.Text = "";
-            lbComplemento.Text = "";
-            lbBairro.Text = "";
-            lbCidade.Text = "";
-            lbEstado.Text = "";
+            txtID.Text = "ID: " + "";
+            txtEmail.Text = "Email: " + "";
+            txtCPF.Text = "CPF: " + "";
+            txtEndereco.Text = "Endereço: " + "";
+            txtNumero.Text = "Número: " + "";
+            txtComplemento.Text = "Complemento: " + "";
+            txtBairro.Text = "Bairro: " + "";
+            txtCidade.Text = "Cidade: " + "";
+            txtEstado.Text = "Estado: " + "";
         }
 
         private void bntCancelar_Click(object sender, EventArgs e)
