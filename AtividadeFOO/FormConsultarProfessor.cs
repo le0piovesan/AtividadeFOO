@@ -61,21 +61,19 @@ namespace AtividadeFOO
             Professor prof = new Professor();
             List<Professor> Professores = prof.RetornarListaCompleta();
 
-           
-
             foreach (Professor professor in Professores)
             {
                 if (p.IDProfessor == professor.IDProfessor)
                 {
-                    txtID.Text = "ID: " + prof.IDProfessor.ToString();
-                    txtEmail.Text = $"Email: " + prof.Email;
-                    txtCPF.Text = $"CPF: " + prof.CPF;
-                    txtEndereco.Text = $"Endereço: " + prof.Endereco;
-                    txtNumero.Text = $"Número: " + prof.Numero.ToString();
-                    txtComplemento.Text = $"Complemento: " + prof.Complemento;
-                    txtBairro.Text = $"Bairro: " + prof.Bairro;
-                    txtCidade.Text = $"Cidade: " + prof.Cidade;
-                    txtEstado.Text = $"Estado: " + prof.Estado;
+                    txtID.Text = "ID: " + professor.IDProfessor.ToString();
+                    txtEmail.Text = $"Email: " + professor.Email;
+                    txtCPF.Text = $"CPF: " + professor.CPF;
+                    txtEndereco.Text = $"Endereço: " + professor.Endereco;
+                    txtNumero.Text = $"Número: " + professor.Numero.ToString();
+                    txtComplemento.Text = $"Complemento: " + professor.Complemento;
+                    txtBairro.Text = $"Bairro: " + professor.Bairro;
+                    txtCidade.Text = $"Cidade: " + professor.Cidade;
+                    txtEstado.Text = $"Estado: " + professor.Estado;
                 }
             }
 
@@ -98,6 +96,8 @@ namespace AtividadeFOO
             fp.ShowDialog();
 
             InicializaCombo();
+            
+            
 
             cbNome.Refresh();
 

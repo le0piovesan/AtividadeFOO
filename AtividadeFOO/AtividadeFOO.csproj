@@ -99,6 +99,9 @@
     <EmbeddedResource Include="FormConsultarAluno.resx">
       <DependentUpon>FormConsultarAluno.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultarCurso.resx">
+      <DependentUpon>FormConsultarCurso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormConsultarProfessor.resx">
       <DependentUpon>FormConsultarProfessor.cs</DependentUpon>
     </EmbeddedResource>

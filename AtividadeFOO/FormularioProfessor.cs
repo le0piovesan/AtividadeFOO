@@ -21,13 +21,22 @@ namespace AtividadeFOO
 
             Professor prof = new Professor();
 
+           
             txtID.Text = prof.ProximoID().ToString();
+           
+            
 
+        }
+
+        public bool Editando()
+        {
+            return true;
         }
 
         public void PopulaCampos(Professor prof)
         {
-            txtID.Text = prof.ProximoID().ToString();
+            txtID.Text = prof.IDProfessor > 0 ? prof.IDProfessor.ToString() : prof.ProximoID().ToString();
+
             txtNome.Text = prof.Nome;
             txtEmail.Text = prof.Email;
             mtxtCPF.Text = prof.CPF;

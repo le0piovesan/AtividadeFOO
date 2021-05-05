@@ -57,9 +57,6 @@ namespace AtividadeFOO
 
             a.Salvar(a);
 
-
-            
-
             if (!ValidarObjeto(a))
                 return;
 
