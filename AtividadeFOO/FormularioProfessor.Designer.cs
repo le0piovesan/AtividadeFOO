@@ -297,6 +297,7 @@ namespace AtividadeFOO
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.lbNomeFormulario);
             this.Name = "FormularioProfessor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormularioProfessor";
             this.ResumeLayout(false);
             this.PerformLayout();

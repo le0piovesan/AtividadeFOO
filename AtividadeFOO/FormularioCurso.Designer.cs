@@ -48,7 +48,7 @@ namespace AtividadeFOO
             this.chlbAlunos.FormattingEnabled = true;
             this.chlbAlunos.Location = new System.Drawing.Point(12, 218);
             this.chlbAlunos.Name = "chlbAlunos";
-            this.chlbAlunos.Size = new System.Drawing.Size(1072, 349);
+            this.chlbAlunos.Size = new System.Drawing.Size(1072, 340);
             this.chlbAlunos.TabIndex = 0;
             this.chlbAlunos.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
@@ -164,6 +164,7 @@ namespace AtividadeFOO
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.chlbAlunos);
             this.Name = "FormularioCurso";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormularioCurso";
             this.ResumeLayout(false);
             this.PerformLayout();

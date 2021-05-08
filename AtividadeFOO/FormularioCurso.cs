@@ -70,6 +70,7 @@ namespace AtividadeFOO
 
 
             Curso c = new Curso();
+            c.IDCurso = Convert.ToInt32(txtID.Text);
             c.Nome = txtNome.Text;
             c.Professor = p;
             c.Alunos = alunos;

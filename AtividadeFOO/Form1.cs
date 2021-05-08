@@ -19,7 +19,7 @@ namespace AtividadeFOO
         {
             InitializeComponent();
 
-            lbNomeFormulario.Text = "Curso de TADS.";
+            lbNomeFormulario.Text = "Trabalho Bimestral Univel.";
         }
 
         public void alunoToolStripMenuItem_Click(object sender, EventArgs e)

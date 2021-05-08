@@ -209,6 +209,7 @@ namespace AtividadeFOO
             this.Controls.Add(this.lbConsultaProfessor);
             this.Controls.Add(this.cbNome);
             this.Name = "FormConsultarProfessor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Professor";
             this.Load += new System.EventHandler(this.FormConsultarProfessor_Load);
             this.ResumeLayout(false);

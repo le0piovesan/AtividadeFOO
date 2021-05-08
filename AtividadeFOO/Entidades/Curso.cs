@@ -65,7 +65,7 @@ namespace ProjetoFaculdade.Entidades
 
         public int ProximoID()
         {
-            if (Cursos.Count <= 0)
+            if (Cursos.Count == 0)
             {
                 return 1;
             }
