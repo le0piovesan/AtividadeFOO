@@ -44,10 +44,11 @@ namespace AtividadeFOO
             // 
             // chlbAlunos
             // 
+            this.chlbAlunos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chlbAlunos.FormattingEnabled = true;
             this.chlbAlunos.Location = new System.Drawing.Point(12, 218);
             this.chlbAlunos.Name = "chlbAlunos";
-            this.chlbAlunos.Size = new System.Drawing.Size(1072, 349);
+            this.chlbAlunos.Size = new System.Drawing.Size(1072, 340);
             this.chlbAlunos.TabIndex = 0;
             this.chlbAlunos.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
@@ -59,6 +60,7 @@ namespace AtividadeFOO
             this.btnSalvar.TabIndex = 1;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnCancelar
             // 
@@ -68,6 +70,7 @@ namespace AtividadeFOO
             this.btnCancelar.TabIndex = 2;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // lbNomeFormulario
             // 
@@ -94,6 +97,7 @@ namespace AtividadeFOO
             // 
             this.txtID.Location = new System.Drawing.Point(67, 52);
             this.txtID.Name = "txtID";
+            this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(100, 20);
             this.txtID.TabIndex = 5;
             // 
@@ -160,6 +164,7 @@ namespace AtividadeFOO
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.chlbAlunos);
             this.Name = "FormularioCurso";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormularioCurso";
             this.ResumeLayout(false);
             this.PerformLayout();

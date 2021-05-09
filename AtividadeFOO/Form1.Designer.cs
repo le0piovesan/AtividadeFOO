@@ -66,21 +66,21 @@ namespace AtividadeFOO
             // alunoToolStripMenuItem
             // 
             this.alunoToolStripMenuItem.Name = "alunoToolStripMenuItem";
-            this.alunoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alunoToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.alunoToolStripMenuItem.Text = "Aluno";
             this.alunoToolStripMenuItem.Click += new System.EventHandler(this.alunoToolStripMenuItem_Click);
             // 
             // professorToolStripMenuItem
             // 
             this.professorToolStripMenuItem.Name = "professorToolStripMenuItem";
-            this.professorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.professorToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.professorToolStripMenuItem.Text = "Professor";
             this.professorToolStripMenuItem.Click += new System.EventHandler(this.professorToolStripMenuItem_Click);
             // 
             // cursoToolStripMenuItem
             // 
             this.cursoToolStripMenuItem.Name = "cursoToolStripMenuItem";
-            this.cursoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cursoToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.cursoToolStripMenuItem.Text = "Curso";
             this.cursoToolStripMenuItem.Click += new System.EventHandler(this.cursoToolStripMenuItem_Click);
             // 
@@ -97,21 +97,21 @@ namespace AtividadeFOO
             // alunoToolStripMenuItem1
             // 
             this.alunoToolStripMenuItem1.Name = "alunoToolStripMenuItem1";
-            this.alunoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.alunoToolStripMenuItem1.Size = new System.Drawing.Size(123, 22);
             this.alunoToolStripMenuItem1.Text = "Aluno";
             this.alunoToolStripMenuItem1.Click += new System.EventHandler(this.alunoToolStripMenuItem1_Click);
             // 
             // professorToolStripMenuItem1
             // 
             this.professorToolStripMenuItem1.Name = "professorToolStripMenuItem1";
-            this.professorToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.professorToolStripMenuItem1.Size = new System.Drawing.Size(123, 22);
             this.professorToolStripMenuItem1.Text = "Professor";
             this.professorToolStripMenuItem1.Click += new System.EventHandler(this.professorToolStripMenuItem1_Click);
             // 
             // cursoToolStripMenuItem1
             // 
             this.cursoToolStripMenuItem1.Name = "cursoToolStripMenuItem1";
-            this.cursoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.cursoToolStripMenuItem1.Size = new System.Drawing.Size(123, 22);
             this.cursoToolStripMenuItem1.Text = "Curso";
             this.cursoToolStripMenuItem1.Click += new System.EventHandler(this.cursoToolStripMenuItem1_Click);
             // 
@@ -119,7 +119,7 @@ namespace AtividadeFOO
             // 
             this.lbNomeFormulario.AutoSize = true;
             this.lbNomeFormulario.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNomeFormulario.Location = new System.Drawing.Point(310, 134);
+            this.lbNomeFormulario.Location = new System.Drawing.Point(157, 131);
             this.lbNomeFormulario.Name = "lbNomeFormulario";
             this.lbNomeFormulario.Size = new System.Drawing.Size(124, 42);
             this.lbNomeFormulario.TabIndex = 1;
@@ -134,7 +134,8 @@ namespace AtividadeFOO
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Trabalho Bimestral";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

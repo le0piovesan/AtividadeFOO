@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoFaculdade.Entidades
 {
-    class Professor
+    public class Professor
     { 
         public static List<Professor> Professores = new List<Professor>();
 
@@ -23,23 +23,75 @@ namespace ProjetoFaculdade.Entidades
 
         public void Salvar(Professor DadosProfessor)
         {
-            Professores.Add(new Professor(DadosProfessor.IDProfessor,
-                                          DadosProfessor.Nome,
-                                          DadosProfessor.Email,
-                                          DadosProfessor.CPF,
-                                          DadosProfessor.Endereco,
-                                          DadosProfessor.Numero,
-                                          DadosProfessor.Complemento,
-                                          DadosProfessor.Bairro,
-                                          DadosProfessor.Cidade,
-                                          DadosProfessor.Estado));
+            Professor professorExistente = RetornaPeloId(DadosProfessor.IDProfessor);
+            if (professorExistente == null)
+            {
+                Adiciona(DadosProfessor);
+            }
+            else
+            {
+                RemovePeloId(DadosProfessor.IDProfessor);
+                Adiciona(DadosProfessor);
 
-            Console.WriteLine(Professores);
+            }
+        }
+
+
+        public int ProximoID()
+        {
+            if (Professores.Count <= 0)
+            {
+                return 1;
+            }
+            else
+            {
+                Int32 length = Professores.Count;
+                Professor professor = Professores[length - 1];
+                return professor.IDProfessor + 1;
+            }     
+        }
+
+        public void Adiciona(Professor DadosProfessor)
+        {
+            Professores.Add(new Professor(DadosProfessor.IDProfessor,
+              DadosProfessor.Nome,
+              DadosProfessor.Email,
+              DadosProfessor.CPF,
+              DadosProfessor.Endereco,
+              DadosProfessor.Numero,
+              DadosProfessor.Complemento,
+              DadosProfessor.Bairro,
+              DadosProfessor.Cidade,
+              DadosProfessor.Estado));
+        }
+
+        public int RetornaIndex(int id)
+        {
+            int index = Professores.FindIndex(x => x.IDProfessor == id);
+            return index;
+        }
+
+        public void RemovePeloId(int id)
+        {
+            int index = RetornaIndex(id);
+            if (index > -1)
+            {
+                Professores.RemoveAt(index);
+            }
+        }
+
+        public Professor RetornaPeloId(int id)
+        {
+            return Professores.FirstOrDefault(x => x.IDProfessor == id);
+        }
+
+        public void Remover(Professor DadosProfessor)
+        {
+           Professores.Remove(DadosProfessor);
         }
 
         public List<Professor> RetornarListaCompleta()
         {
-            Console.WriteLine(Professores);
             return Professores;
         }
 
@@ -60,7 +112,7 @@ namespace ProjetoFaculdade.Entidades
 
        public override string ToString()
         {
-            return String.Concat(IDProfessor.ToString(), " - ", Nome);
+            return Nome;
         }
     }
 }
